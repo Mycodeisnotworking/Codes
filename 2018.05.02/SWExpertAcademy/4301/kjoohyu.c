@@ -34,19 +34,11 @@
 #include <math.h>
 
 int CanYouAdd(int **arr,int x, int y, int M, int N) {
-	int i, j;
-	
 	if (x >= 2)
 		if (arr[x - 2][y])
 			return 0;
-	if (x + 2 < M)
-		if (arr[x + 2][y])
-			return 0;
 	if (y >= 2)
 		if (arr[x][y-2])
-			return 0;
-	if (y + 2 < N)
-		if (arr[x][y+2])
 			return 0;
 	return 1;
 }
