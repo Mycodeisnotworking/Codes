@@ -1,0 +1,28 @@
+Jonghoon
+
+line 56 -> else if를 else로 바꾸기.
+SetIdx에서 if( angle ) 줄이기
+
+ex)
+if (angle < 0 && angle >= -9) {
+	scoreidx = 15;
+}
+else if (angle < -9 && angle >= -27) {
+	scoreidx = 14;
+}
+
+-->
+
+if (angle < 0 && angle >= -9) {
+	scoreidx = 15;
+}
+else if (angle >= -27) {
+	scoreidx = 14;
+}
+...
+
+
+Subin
+
+else if (angle) 줄이기.
+Answer = Answer + score; -> Answer += score;
