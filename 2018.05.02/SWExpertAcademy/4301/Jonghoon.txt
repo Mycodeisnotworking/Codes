@@ -1,0 +1,35 @@
+SB
+ - 43~53행
+  -> 4방향 모두 순회할 필요 없음
+   => 콩을 왼쪽 위부터 오른쪽 아래 방향으로 심어 나가므로, 새로 콩을 심을 때 왼쪽과 위쪽만 확인하면 됨
+   => dRow, dCol의 배열 크기를 2로 잡고 반복문을 2번만 돌리면 됨
+ 
+ - 44행
+  => 46행과 if else 로 연결되어도 ㄱㅊ, 그냥 모두 ||로 이어도 동작은 같을듯.
+  => int nRow=i+dRow[k], nCol=j+dCol[k];로 선언하여 if문에서 쓰면 깔끔할듯 합니다.
+
+
+JH
+ - 6행 (CanYouAdd 함수)
+  - 함수명 정리 -> 2단어 내로(ex- PlantEnable)
+   - c언어라서 bool형 안쓴거 같지만 난 이런건 bool 형으로 리턴 하는걸 선호함
+  - delta 사용한 순회
+   => int dx[4]={0, 0, 1, -1};
+      int dy[4]={1, -1, 0, 0};
+      int nextX, nextY;
+      for(int i=0;i<4;i++){
+	nextX=x+dx[i];
+	nextY=y+dy[i];
+	if(arr[nextX][nextY]==1){
+		...내용...
+	}
+      }
+   상하좌우 4방향을 전부 순회해야 할 경우 if문 4번 반복보다 이쪽이 더 쉬울 수 있음.
+
+ - 62행
+  - 2차원 배열 free 할 때는 free해줄 때 allocation 해줄때랑 똑같이 해줘야됨.
+ for (int i = 0; i < M; i++)
+	free(arr[i]);
+ free(arr);
+
+    기존 코드에서 메모리 누수 나는거 확인했고, 해당 코드 JH_modified로 올림. 보셈
