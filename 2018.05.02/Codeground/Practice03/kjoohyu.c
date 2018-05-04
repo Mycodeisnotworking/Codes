@@ -71,86 +71,48 @@ int main(void)
 			if (angle < 0)
 				angle = 360 + angle;
 		
-			if (angle > 0 && angle < 9) {
+			if (angle > 0 && angle < 9) 
 				Answer += Range * 6;
-				continue;
-			}
-			else if (angle < 27) {
+			else if (angle < 27)
 				Answer += Range * 13;
-				continue;
-			}
-			else if (angle < 45) {
+			else if (angle < 45)
 				Answer += Range * 4;
-				continue;
-			}
-			else if (angle < 63) {
+			else if (angle < 63) 
 				Answer += Range * 18;
-				continue;
-			}
-			else if (angle < 81) {
+			else if (angle < 81) 
 				Answer += Range * 1;
-				continue;
-			}
-			else if (angle < 99) {
+			else if (angle < 99)
 				Answer += Range * 20;
-				continue;
-			}
-			else if (angle < 117) {
+			else if (angle < 117) 
 				Answer += Range * 5;
-				continue;
-			}
-			else if (angle < 135) {
+			else if (angle < 135) 
 				Answer += Range * 12;
-				continue;
-			}
-			else if (angle < 153) {
+			else if (angle < 153) 
 				Answer += Range * 9;
-				continue;
-			}
-			else if (angle < 171) {
+			else if (angle < 171) 
 				Answer += Range * 14;
-				continue;
-			}
-			else if (angle < 189) {
+			else if (angle < 189) 
 				Answer += Range * 11;
-				continue;
-			}
-			else if (angle < 207) {
+			else if (angle < 207) 
 				Answer += Range * 8;
-				continue;
-			}
-			else if (angle < 225) {
+			else if (angle < 225) 
 				Answer += Range * 16;
-				continue;
-			}
-			else if (angle < 243) {
+			else if (angle < 243) 
 				Answer += Range * 7;
-				continue;
-			}
-			else if (angle < 261) {
+			else if (angle < 261) 
 				Answer += Range * 19;
-				continue;
-			}
-			else if (angle < 279) {
+			else if (angle < 279) 
 				Answer += Range * 3;
-				continue;
-			}
-			else if (angle < 297) {
+			else if (angle < 297) 
 				Answer += Range * 17;
-				continue;
-			}
-			else if (angle < 315) {
+			else if (angle < 315) 
 				Answer += Range * 2;
-				continue;
-			}
-			else if (angle < 333) {
+			else if (angle < 333)
 				Answer += Range * 15;
-				continue;
-			}
-			else if (angle < 351) {
+				
+			else if (angle < 351)
 				Answer += Range * 10;
-				continue;
-			}
+				
 			else
 				Answer += Range * 6;
 

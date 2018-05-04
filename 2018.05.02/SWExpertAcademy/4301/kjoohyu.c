@@ -59,6 +59,8 @@ int main(void)
 			}
 		}
 		printf("#%d %d\n", test_case, Answer);
+		for (int i = 0; i < M; i++)
+			free(arr[i]);
 		free(arr);
 
 	}
